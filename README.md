@@ -19,13 +19,15 @@ AI WeWork Robot是一个基于Python的企业微信机器人，能够接入GPT�
 
 ### 企业微信后台
 
-登录企业微信管理后台（[注册企业微信]([注册企业微信-帮助中心-企业微信 (qq.com)](https://open.work.weixin.qq.com/help2/pc/15422))）
+登录企业微信管理后台（[企业微信注册](https://open.work.weixin.qq.com/help2/pc/15422)）
 
 ![](https://ooo.0x0.ooo/2024/01/13/OvMqRb.png)
 ![](https://ooo.0x0.ooo/2024/01/13/OvM59l.png)
+
 创建一个应用
 ![](https://ooo.0x0.ooo/2024/01/13/OvMWds.png)
 ![](https://ooo.0x0.ooo/2024/01/13/OvMoFP.png)
+
 点击设置API接收
 ![](https://ooo.0x0.ooo/2024/01/13/OvMkaK.png)
 ![](https://ooo.0x0.ooo/2024/01/13/OvMLeI.png)
@@ -38,7 +40,9 @@ git clone https://github.com/taiyi747/WeWork-Robot.git
 cd WeWork-Robot
 pip3 install -r requirements.txt
 ```
+
 编辑config.py
+
 ```
 sToken = 对应上面保存的Token
 sEncodingAESKey = 对应上面保存的EncodingAESKey
@@ -50,10 +54,13 @@ gemini_key = 从谷歌获取的key
 ```bash
 python3 main.py
 ```
+
 回到应用管理
 ![](https://ooo.0x0.ooo/2024/01/13/OvMEGD.png)
+
 保存提示成功即可，找到企业可信IP，把你的ip添加进去
 ![](https://ooo.0x0.ooo/2024/01/13/OvMUyB.png)
+
 最后，当年你随机问机器人一个问题，成功回复即成功
 ![](https://ooo.0x0.ooo/2024/01/13/OvMG3F.png)
 
