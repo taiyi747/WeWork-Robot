@@ -2,3 +2,4 @@ fastapi
 httpx
 pydantic
 aiohttp
+pycryptodome
