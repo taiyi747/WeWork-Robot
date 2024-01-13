@@ -1,13 +1,43 @@
 # AI WeWork Robot
 
-基于python的企业微信机器人
-可接入 GPT、Gemini 等大语言模型
-（默认Gemini-Pro）
+AI WeWork Robot是一个基于Python的企业微信机器人，能够接入GPT、Gemini等大型语言模型。默认配置为Gemini-Pro，它可以帮助企业自动化处理信息，提供智能回复等功能。
+
+## 特性
+
+- 自动回复消息
+- 接入多种大语言模型
+- 支持自定义消息处理逻辑
+- 基于企业微信应用API
+- SLA99.99999999999%
 
 ## 使用环境
 
-python
-一个企业微信
+- Python 3.9+
+- 企业微信管理员
+
+## Quick Start
+
+### 企业微信后台
+
+登录企业微信管理后台（[注册企业微信]([注册企业微信-帮助中心-企业微信 (qq.com)](https://open.work.weixin.qq.com/help2/pc/15422))）
+
+![](https://ooo.0x0.ooo/2024/01/13/OvMqRb.png)
+![](https://ooo.0x0.ooo/2024/01/13/OvM59l.png)
+创建一个应用
+![](https://ooo.0x0.ooo/2024/01/13/OvMWds.png)
+![](https://ooo.0x0.ooo/2024/01/13/OvMoFP.png)
+点击设置API接收
+![](https://ooo.0x0.ooo/2024/01/13/OvMkaK.png)
+确保你已经安装了Python环境，然后执行以下命令来安装AI WeWork Robot：
+
+```bash
+git clone https://github.com/taiyi747/WeWork-Robot.git
+cd WeWork-Robot
+pip install -r requirements.txt
+```
+
+
+
 
 # Tips
 
