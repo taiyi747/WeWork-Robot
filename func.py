@@ -61,14 +61,14 @@ async def chat_msg(to_user_id: str, recived_msg: str, agentid: str):
     name = to_user_id
     print()
     if recived_msg == "new":
-        User_chat_context[agentid] = example_context
+        User_chat_context[agentid] = example_context.copy()
         result = "已重置上下文"
     if agentid in User_chat_context:
         User_chat_context[agentid].append({"role": "user", "content": recived_msg})
         result = await Gemini_chat(User_chat_context[agentid])
         User_chat_context[agentid].append({"role": "assistant", "content": result})
     else:
-        User_chat_context[agentid] = example_context
+        User_chat_context[agentid] = example_context.copy()
         User_chat_context[agentid].append({"role": "user", "content": recived_msg})
         result = await Gemini_chat(User_chat_context[agentid])
         User_chat_context[agentid].append({"role": "assistant", "content": result})
