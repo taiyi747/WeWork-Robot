@@ -47,7 +47,7 @@ pip3 install -r requirements.txt
 sToken = 对应上面保存的Token
 sEncodingAESKey = 对应上面保存的EncodingAESKey
 sCorpID = 对应企业微信管理后台——我的企业下面的企业ID
-sCorpsecret=dui'y对应应用的secret
+sCorpsecret= 对应应用的secret
 gemini_key = 从谷歌获取的key
 ```
 保存，启动程序
