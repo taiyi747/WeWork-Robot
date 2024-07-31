@@ -90,13 +90,17 @@ Send_Temp = """<xml>
    <Content>%(content)s</Content>
 </xml>"""
 
-@app.get("/wechat")
-async def Verify(msg_signature: str, timestamp: str, nonce: str, echostr: str) -> str:
-    ret, sReplyEchoStr = wxcpt.VerifyURL(msg_signature, timestamp, nonce, echostr)
-    if ret != 0:
-        logging.error(f"ERR: DecryptMsg ret: {ret}")
+@app.get("/")
+async def Verify(msg_signature: str, timestamp: str, nonce: str, echostr: str):
+    sVerifyMsgSig = msg_signature
+    sVerifyTimeStamp = timestamp
+    sVerifyNonce = nonce
+    sVerifyEchoStr = echostr
+    ret, sReplyEchoStr = wxcpt.VerifyURL(sVerifyMsgSig, sVerifyTimeStamp,sVerifyNonce,sVerifyEchoStr)
+    if( ret!=0 ):
+        print("ERR: DecryptMsg ret: " + str(ret))
         sys.exit(1)
-    return sReplyEchoStr
+    return int(sReplyEchoStr)
 
 @app.post("/wechat")
 async def main(
